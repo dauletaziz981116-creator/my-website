@@ -1,0 +1,169 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Шапка и меню */
+header {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 36px;
+}
+.menu {
+  display: inline-block;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+.menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.menu a:hover {
+  color: #4CAF50;
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Секции */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Каталог */
+.catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.catalog-item {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.catalog-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Таблица прайс-листа */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Отзывы */
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.review-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Контакты */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFD700;
+}
+
+/* Подвал */
+footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .catalog-grid, .reviews-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Контейнер логотипа и заголовка */
+.header-container {
+  display: flex;
+  align-items: center; /* выравнивание по вертикали */
+  justify-content: center; /* по центру горизонтально */
+  gap: 15px; /* расстояние между логотипом и заголовком */
+  margin-bottom: 15px;
+}
+
+/* Логотип */
+.header-container .logo {
+  height: 50px; /* высота совпадает с заголовком */
+  width: auto; /* сохраняем пропорции */
+}
+
+/* Заголовок */
+.header-container h1 {
+  font-size: 50px; /* можно регулировать, чтобы совпадало с логотипом */
+  margin: 0;
+}
+
+/* Меню */
+.menu {
+  display: inline-block;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: #4CAF50;
+  border-bottom: 2px solid #FFD700;
+}
